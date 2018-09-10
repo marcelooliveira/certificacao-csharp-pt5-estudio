@@ -6,4 +6,12 @@
     <RootNamespace>_01._1.StackContainer</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="img1.png" />
+    <None Remove="img2.png" />
+    <None Remove="img3.png" />
+    <None Remove="img4.png" />
+    <None Remove="img5.png" />
+  </ItemGroup>
+
 </Project>
