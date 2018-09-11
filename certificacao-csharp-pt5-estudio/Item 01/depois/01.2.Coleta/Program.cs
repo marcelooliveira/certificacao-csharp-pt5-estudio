@@ -42,10 +42,10 @@ namespace _01._02.TiposDeReferencia
                 };
             }
         }
-        ///< image url="$(ProjectDir)\img2.png"/>
-        ///< image url="$(ProjectDir)\img4.png"/>
-        ///< image url="$(ProjectDir)\img5.png"/>
-        ///< image url="$(ProjectDir)\img6.png"/>
+        ///<image url="$(ProjectDir)\img2.png"/>
+        ///<image url="$(ProjectDir)\img4.png"/>
+        ///<image url="$(ProjectDir)\img5.png"/>
+        ///<image url="$(ProjectDir)\img6.png"/>
     }
 
     struct EstruturaLivro
