@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace _01._3.Finalizador_antes
+namespace _01._3.Finalizador
 {
     class Program
     {

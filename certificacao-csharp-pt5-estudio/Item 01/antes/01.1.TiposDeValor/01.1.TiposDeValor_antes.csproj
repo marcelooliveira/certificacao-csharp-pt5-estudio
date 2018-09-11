@@ -3,7 +3,8 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <RootNamespace>_01._1.StackContainer</RootNamespace>
+    <RootNamespace>_01._1.TiposDeValor_antes</RootNamespace>
+    <AssemblyName>01.1.TiposDeValor_antes</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
