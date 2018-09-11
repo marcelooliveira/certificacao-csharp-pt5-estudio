@@ -24,6 +24,10 @@ namespace _01._02.TiposDeReferencia
                 };
             }
         }
+        ///< image url="$(ProjectDir)\img1.png"/>
+
+
+
 
         private static void GerarTiposReferencia()
         {
@@ -37,6 +41,9 @@ namespace _01._02.TiposDeReferencia
                 };
             }
         }
+        ///< image url="$(ProjectDir)\img2.png"/>
+        ///< image url="$(ProjectDir)\img4.png"/>
+        ///< image url="$(ProjectDir)\img5.png"/>
     }
 
     struct EstruturaLivro
