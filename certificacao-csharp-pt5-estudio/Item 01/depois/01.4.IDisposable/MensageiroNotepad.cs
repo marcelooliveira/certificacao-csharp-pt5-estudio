@@ -28,6 +28,13 @@ namespace _01._4.IDisposable
             }
         }
 
+        ~MensageiroNotepad()
+        {
+            //Descarta os recursos não-gerenciados:
+            CloseHandleEx(Process.GetCurrentProcess().Handle, ponteiroNotepad);
+            ponteiroNotepad = IntPtr.Zero;
+        }
+
         const uint PROCESS_DUP_HANDLE = 0x0040;
 
         [DllImport("kernel32.dll", SetLastError = true)]
