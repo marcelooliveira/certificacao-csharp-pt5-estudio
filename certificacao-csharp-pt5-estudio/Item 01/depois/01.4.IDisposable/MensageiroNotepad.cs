@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 
 namespace _01._4.IDisposable_Finalizador
 {
-    class MensageiroNotepad
+    public class MensageiroNotepad
     {
         IntPtr ponteiroNotepad;
 
