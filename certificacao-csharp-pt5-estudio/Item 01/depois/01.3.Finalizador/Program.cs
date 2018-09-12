@@ -33,12 +33,12 @@ namespace _01._3.Finalizador
             //Trace.WriteLine("Livro " + Id + " está sendo criado");
         }
 
-        ~Livro()
-        {
-            //LIBERAR SOMENTE OS RECURSOS NÃO-GERENCIADOS
+        //~Livro()
+        //{
+        //    //LIBERAR SOMENTE OS RECURSOS NÃO-GERENCIADOS
 
 
-            Trace.WriteLine("Livro " + Id + " está sendo finalizado");
-        }
+        //    Trace.WriteLine("Livro " + Id + " está sendo finalizado");
+        //}
     }
 }

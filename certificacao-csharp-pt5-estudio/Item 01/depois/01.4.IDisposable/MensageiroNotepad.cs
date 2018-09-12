@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 
 namespace _01._4.IDisposable_Finalizador
 {
-    public class MensageiroNotepad
+    public class MensageiroNotepad : IDisposable
     {
         IntPtr ponteiroNotepad;
 
@@ -28,12 +28,12 @@ namespace _01._4.IDisposable_Finalizador
             }
         }
 
-        ~MensageiroNotepad()
-        {
-            //Descarta os recursos não-gerenciados:
-            CloseHandleEx(Process.GetCurrentProcess().Handle, ponteiroNotepad);
-            ponteiroNotepad = IntPtr.Zero;
-        }
+        //~MensageiroNotepad()
+        //{
+        //    //Descarta os recursos não-gerenciados:
+        //    CloseHandleEx(Process.GetCurrentProcess().Handle, ponteiroNotepad);
+        //    ponteiroNotepad = IntPtr.Zero;
+        //}
 
         const uint PROCESS_DUP_HANDLE = 0x0040;
 
@@ -81,5 +81,42 @@ namespace _01._4.IDisposable_Finalizador
             CloseHandle(hProcess);
             return success;
         }
+
+        #region IDisposable Support
+        private bool disposedValue = false; // Para detectar chamadas redundantes
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposedValue)
+            {
+                if (disposing)
+                {
+                    // TODO: descartar estado gerenciado (objetos gerenciados).
+                }
+
+                //Descarta os recursos não-gerenciados:
+                CloseHandleEx(Process.GetCurrentProcess().Handle, ponteiroNotepad);
+                ponteiroNotepad = IntPtr.Zero;
+
+                disposedValue = true;
+            }
+        }
+
+        // TODO: substituir um finalizador somente se Dispose(bool disposing) acima tiver o código para liberar recursos não gerenciados.
+        ~MensageiroNotepad()
+        {
+            // Não altere este código. Coloque o código de limpeza em Dispose(bool disposing) acima.
+            Dispose(false);
+        }
+
+        // Código adicionado para implementar corretamente o padrão descartável.
+        public void Dispose()
+        {
+            // Não altere este código. Coloque o código de limpeza em Dispose(bool disposing) acima.
+            Dispose(true);
+            // TODO: remover marca de comentário da linha a seguir se o finalizador for substituído acima.
+            GC.SuppressFinalize(this);
+        }
+        #endregion
     }
 }
