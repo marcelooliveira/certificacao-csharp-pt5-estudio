@@ -35,6 +35,9 @@ namespace _01._3.Finalizador
 
         ~Livro()
         {
+            //LIBERAR SOMENTE OS RECURSOS NÃO-GERENCIADOS
+
+
             Trace.WriteLine("Livro " + Id + " está sendo finalizado");
         }
     }
