@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Interop;
 
-namespace _01._4.IDisposable
+namespace _01._4.IDisposable_Finalizador
 {
     partial class FrmMensagem
     {

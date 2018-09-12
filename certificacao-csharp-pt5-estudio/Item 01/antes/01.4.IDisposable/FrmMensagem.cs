@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace _01._4.IDisposable
+namespace _01._4.IDisposable_Finalizador
 {
     public partial class FrmMensagem : Form
     {

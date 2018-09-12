@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _01._4.IDisposable
+namespace _01._4.IDisposable_Finalizador
 {
     static class Program
     {

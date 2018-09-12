@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Runtime.InteropServices;
 
-namespace _01._4.IDisposable
+namespace _01._4.IDisposable_Finalizador
 {
     class MensageiroNotepad
     {

@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{CF5CA9CD-6720-4741-8800-460DEBF5A6DF}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>_01._4.IDisposable</RootNamespace>
-    <AssemblyName>01.4.IDisposable</AssemblyName>
+    <RootNamespace>_01._4.IDisposable_Finalizador</RootNamespace>
+    <AssemblyName>01.4.IDisposable_Finalizador</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
