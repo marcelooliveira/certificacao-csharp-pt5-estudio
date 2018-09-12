@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Runtime.InteropServices;
 
-namespace _01._4.IDisposable
+namespace _01._4.IDisposable_Finalizador
 {
     class MensageiroNotepad
     {
@@ -28,12 +28,12 @@ namespace _01._4.IDisposable
             }
         }
 
-        ~MensageiroNotepad()
-        {
-            //Descarta os recursos não-gerenciados:
-            CloseHandleEx(Process.GetCurrentProcess().Handle, ponteiroNotepad);
-            ponteiroNotepad = IntPtr.Zero;
-        }
+        //~MensageiroNotepad()
+        //{
+        //    //Descarta os recursos não-gerenciados:
+        //    CloseHandleEx(Process.GetCurrentProcess().Handle, ponteiroNotepad);
+        //    ponteiroNotepad = IntPtr.Zero;
+        //}
 
         const uint PROCESS_DUP_HANDLE = 0x0040;
 
