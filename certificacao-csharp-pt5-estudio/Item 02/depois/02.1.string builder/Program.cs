@@ -11,7 +11,7 @@ namespace _02._1.string_builder
     {
         static void Main(string[] args)
         {
-            string materias = "";
+
         }
     }
 }
