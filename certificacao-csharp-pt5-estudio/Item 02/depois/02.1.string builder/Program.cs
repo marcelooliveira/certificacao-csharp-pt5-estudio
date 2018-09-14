@@ -11,7 +11,16 @@ namespace _02._1.string_builder
     {
         static void Main(string[] args)
         {
+            string materias = string.Empty;
+            materias += "Português";
+            Console.WriteLine(materias);
+            materias += ", Matemática";
+            Console.WriteLine(materias);
+            materias += ", Geografia";
+            Console.WriteLine(materias);
+            Console.ReadKey();
 
+            ///<image url="$(ProjectDir)/img1.png"/>
         }
     }
 }
