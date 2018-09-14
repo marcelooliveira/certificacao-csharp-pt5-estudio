@@ -19,7 +19,7 @@ namespace _02._1.string_builder
             materias = materias + ", Geografia";
             Console.WriteLine(materias);
 
-            ///<i mage url="$(ProjectDir)/img1.png"/>
+            ///< image url="$(ProjectDir)/img1.png"/>
         }
     }
 }
