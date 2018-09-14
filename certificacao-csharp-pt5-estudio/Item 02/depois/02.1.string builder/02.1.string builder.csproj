@@ -6,4 +6,8 @@
     <RootNamespace>_02._1.string_builder</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="img1.png" />
+  </ItemGroup>
+
 </Project>
