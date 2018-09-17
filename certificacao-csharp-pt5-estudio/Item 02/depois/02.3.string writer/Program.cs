@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace _02._2.string_reader
+namespace _02._3.string_writer
 {
     class Program
     {
@@ -9,13 +9,17 @@ namespace _02._2.string_reader
         {
             string ingredientes = GetIngredientes();
 
-            using (var stringReader = new StringReader(ingredientes))
+            using (var stringWriter = new StringWriter())
             {
-                string linha = string.Empty;
-                while ((linha = stringReader.ReadLine()) != null)
+                using (var stringReader = new StringReader(ingredientes))
                 {
-                    Console.WriteLine(linha);
+                    string linha = string.Empty;
+                    while ((linha = stringReader.ReadLine()) != null)
+                    {
+                        stringWriter.WriteLine(linha);
+                    }
                 }
+                Console.WriteLine(stringWriter);
             }
 
             Console.ReadKey();
