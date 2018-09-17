@@ -9,14 +9,7 @@ namespace _02._2.string_reader
         {
             string ingredientes = GetIngredientes();
 
-            using (var stringReader = new StringReader(ingredientes))
-            {
-                string linha = string.Empty;
-                while ((linha = stringReader.ReadLine()) != null)
-                {
-                    Console.WriteLine(linha);
-                }
-            }
+            Console.WriteLine(ingredientes);
 
             Console.ReadKey();
         }

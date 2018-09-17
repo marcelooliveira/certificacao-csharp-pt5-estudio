@@ -9,6 +9,8 @@ namespace _02._2.string_reader
         {
             string ingredientes = GetIngredientes();
 
+            Console.WriteLine(ingredientes);
+
             Console.ReadKey();
         }
 
