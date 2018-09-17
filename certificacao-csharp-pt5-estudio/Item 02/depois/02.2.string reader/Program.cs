@@ -7,6 +7,12 @@ namespace _02._2.string_reader
     {
         static void Main(string[] args)
         {
+            //TAREFA:
+            //======
+            //1) Ler sequencialmente a lista de ingredientes
+            //linha a linha.
+            //2) Cada Linha deve começar com um caracter "•" e um espaço
+
             string ingredientes = GetIngredientes();
 
             Console.WriteLine(ingredientes);
@@ -16,7 +22,7 @@ namespace _02._2.string_reader
 
         private static string GetIngredientes()
         {
-return 
+return
 @"3 cenouras médias raspadas e picadas
 3 ovos
 1 xícara de óleo
