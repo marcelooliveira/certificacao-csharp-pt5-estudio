@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Text;
 
 namespace _02._3.string_writer
 {
@@ -17,13 +18,17 @@ namespace _02._3.string_writer
 
             string ingredientes = GetIngredientes();
 
-            using (StringReader stringReader = new StringReader(ingredientes))
+            using (StringWriter stringWriter = new StringWriter())
             {
-                string line;
-                while ((line = stringReader.ReadLine()) != null)
+                using (StringReader stringReader = new StringReader(ingredientes))
                 {
-                    Console.WriteLine("• " + line);
+                    string line;
+                    while ((line = stringReader.ReadLine()) != null)
+                    {
+                        stringWriter.WriteLine("• " + line);
+                    }
                 }
+                Console.WriteLine(stringWriter);
             }
 
             Console.ReadKey();
