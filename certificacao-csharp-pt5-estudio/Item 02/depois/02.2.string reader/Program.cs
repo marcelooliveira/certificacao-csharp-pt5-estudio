@@ -16,7 +16,8 @@ namespace _02._2.string_reader
 
         private static string GetIngredientes()
         {
-            return @"3 cenouras médias raspadas e picadas
+return 
+@"3 cenouras médias raspadas e picadas
 3 ovos
 1 xícara de óleo
 2 xícaras de açúcar
