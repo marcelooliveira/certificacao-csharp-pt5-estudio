@@ -7,14 +7,22 @@ namespace _02._3.string_writer
     {
         static void Main(string[] args)
         {
+            //TAREFA:
+            //======
+            //1) Ler sequencialmente a lista de ingredientes
+            //linha a linha.
+            //2) Cada Linha deve começar com um caracter "•" e um espaço
+
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+
             string ingredientes = GetIngredientes();
 
-            using (var stringReader = new StringReader(ingredientes))
+            using (StringReader stringReader = new StringReader(ingredientes))
             {
-                string linha = string.Empty;
-                while ((linha = stringReader.ReadLine()) != null)
+                string line;
+                while ((line = stringReader.ReadLine()) != null)
                 {
-                    Console.WriteLine(linha);
+                    Console.WriteLine("• " + line);
                 }
             }
 
@@ -23,8 +31,8 @@ namespace _02._3.string_writer
 
         private static string GetIngredientes()
         {
-            return 
-@"3 cenouras médias raspadas e picadas
+            return
+            @"3 cenouras médias raspadas e picadas
 3 ovos
 1 xícara de óleo
 2 xícaras de açúcar

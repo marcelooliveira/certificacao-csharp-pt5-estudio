@@ -7,6 +7,12 @@ namespace _02._2.string_reader
     {
         static void Main(string[] args)
         {
+            //TAREFA:
+            //======
+            //1) Ler sequencialmente a lista de ingredientes
+            //linha a linha.
+            //2) Cada Linha deve começar com um caracter "•" e um espaço
+
             string ingredientes = GetIngredientes();
 
             Console.WriteLine(ingredientes);

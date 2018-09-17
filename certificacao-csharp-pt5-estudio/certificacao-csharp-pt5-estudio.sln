@@ -41,6 +41,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.2.string reader", "Item 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.3.string writer_antes", "Item 02\antes\02.3.string writer\02.3.string writer_antes.csproj", "{8BCE8257-25C6-40BB-8618-01F23D1DD293}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.3.string writer", "Item 02\depois\02.3.string writer\02.3.string writer.csproj", "{9C37CD3A-9942-4BE3-A0BD-D739ABE903E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{8BCE8257-25C6-40BB-8618-01F23D1DD293}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BCE8257-25C6-40BB-8618-01F23D1DD293}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BCE8257-25C6-40BB-8618-01F23D1DD293}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C37CD3A-9942-4BE3-A0BD-D739ABE903E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C37CD3A-9942-4BE3-A0BD-D739ABE903E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C37CD3A-9942-4BE3-A0BD-D739ABE903E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C37CD3A-9942-4BE3-A0BD-D739ABE903E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -121,6 +127,7 @@ Global
 		{77907C34-7E33-4D79-966F-3712DB2F01E5} = {B4F62BE2-8A0F-47DE-B130-D7F169B28ECE}
 		{B92FC96C-EB08-4C66-B222-4EF584A8CD6C} = {042D9742-0E3A-4350-B368-8DD54B297D40}
 		{8BCE8257-25C6-40BB-8618-01F23D1DD293} = {B4F62BE2-8A0F-47DE-B130-D7F169B28ECE}
+		{9C37CD3A-9942-4BE3-A0BD-D739ABE903E7} = {042D9742-0E3A-4350-B368-8DD54B297D40}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8B21CBF6-2744-44CD-BB30-F7A0E1ABC766}
