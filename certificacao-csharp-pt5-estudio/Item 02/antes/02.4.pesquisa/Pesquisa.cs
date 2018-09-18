@@ -7,11 +7,11 @@ namespace _02._4.pesquisa
 {
     internal class Pesquisa
     {
-        private readonly TextBox txtPesquisa;
+        private readonly Label txtPesquisa;
         private readonly List<string> parametros;
         private int indiceDe;
 
-        public Pesquisa(TextBox txtPesquisa, List<string> parametros)
+        public Pesquisa(Label txtPesquisa, List<string> parametros)
         {
             this.txtPesquisa = txtPesquisa;
             this.parametros = parametros;
@@ -47,17 +47,18 @@ namespace _02._4.pesquisa
 
         private string Contem()
         {
+            //txtPesquisa: caixa de texto do Windows Forms
             var textoBusca = parametros.FirstOrDefault();
 
             bool contem = false; //implementar busca
 
             if (contem)
             {
-                return "A caixa de texto CONTÉM a string '" + textoBusca + "'";
+                return "O documento CONTÉM a string '" + textoBusca + "'";
             }
             else
             {
-                return "A caixa de texto NÃO CONTÉM a string '" + textoBusca + "'";
+                return "O documento NÃO CONTÉM a string '" + textoBusca + "'";
             }
         }
 
@@ -69,11 +70,11 @@ namespace _02._4.pesquisa
 
             if (comecaCom)
             {
-                return "A caixa de texto COMEÇA COM a string '" + textoBusca + "'";
+                return "O documento COMEÇA COM a string '" + textoBusca + "'";
             }
             else
             {
-                return "A caixa de texto NÃO COMEÇA COM a string '" + textoBusca + "'";
+                return "O documento NÃO COMEÇA COM a string '" + textoBusca + "'";
             }
         }
 
@@ -85,11 +86,11 @@ namespace _02._4.pesquisa
 
             if (terminaCom)
             {
-                return "A caixa de texto TERMINA COM a string '" + textoBusca + "'";
+                return "O documento TERMINA COM a string '" + textoBusca + "'";
             }
             else
             {
-                return "A caixa de texto NÃO TERMINA COM a string '" + textoBusca + "'";
+                return "O documento NÃO TERMINA COM a string '" + textoBusca + "'";
             }
         }
 

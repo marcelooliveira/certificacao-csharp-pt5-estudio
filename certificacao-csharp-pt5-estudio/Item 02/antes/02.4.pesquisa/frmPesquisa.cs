@@ -43,7 +43,7 @@ namespace _02._4.pesquisa
                           .Select(t => t.Text)
                           .ToList();
 
-                    Pesquisa pesquisa = new Pesquisa(txtPesquisa, parametros);
+                    Pesquisa pesquisa = new Pesquisa(lblDocumento, parametros);
                     string resultado = pesquisa.ExecutarComando(tipoComando);
                     MessageBox.Show(resultado);
                 }

@@ -45,7 +45,7 @@
             this.txtContem = new System.Windows.Forms.TextBox();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.txtPesquisa = new System.Windows.Forms.TextBox();
+            this.lblDocumento = new System.Windows.Forms.Label();
             this.pnlBotoes.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -248,24 +248,23 @@
             this.radioButton5.UseVisualStyleBackColor = true;
             this.radioButton5.CheckedChanged += new System.EventHandler(this.rbt_CheckedChanged);
             // 
-            // txtPesquisa
+            // lblDocumento
             // 
-            this.txtPesquisa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtPesquisa.Font = new System.Drawing.Font("Consolas", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPesquisa.Location = new System.Drawing.Point(0, 185);
-            this.txtPesquisa.Multiline = true;
-            this.txtPesquisa.Name = "txtPesquisa";
-            this.txtPesquisa.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtPesquisa.Size = new System.Drawing.Size(684, 226);
-            this.txtPesquisa.TabIndex = 1;
-            this.txtPesquisa.Text = resources.GetString("txtPesquisa.Text");
+            this.lblDocumento.BackColor = System.Drawing.Color.White;
+            this.lblDocumento.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblDocumento.Font = new System.Drawing.Font("Consolas", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDocumento.Location = new System.Drawing.Point(0, 185);
+            this.lblDocumento.Name = "lblDocumento";
+            this.lblDocumento.Size = new System.Drawing.Size(684, 226);
+            this.lblDocumento.TabIndex = 2;
+            this.lblDocumento.Text = resources.GetString("lblDocumento.Text");
             // 
             // frmPesquisa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 411);
-            this.Controls.Add(this.txtPesquisa);
+            this.Controls.Add(this.lblDocumento);
             this.Controls.Add(this.pnlBotoes);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(700, 450);
@@ -274,14 +273,12 @@
             this.pnlBotoes.ResumeLayout(false);
             this.pnlBotoes.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Panel pnlBotoes;
-        private System.Windows.Forms.TextBox txtPesquisa;
         private System.Windows.Forms.TextBox txtSubstituir1;
         private System.Windows.Forms.TextBox txtTrecho1;
         private System.Windows.Forms.TextBox txtIndiceDe;
@@ -297,6 +294,7 @@
         private System.Windows.Forms.TextBox txtSubstituir2;
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.Label lblDocumento;
     }
 }
 
