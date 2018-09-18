@@ -34,8 +34,6 @@ namespace _02._4.pesquisa
                     return TerminaCom();
                 case "IndiceDe":
                     return IndiceDe();
-                case "UltimoIndiceDe":
-                    return UltimoIndiceDe();
                 case "Trecho":
                     return Trecho();
                 case "Substituir":
@@ -108,22 +106,6 @@ namespace _02._4.pesquisa
             else
             {
                 return "Índice da string '" + textoBusca + "' é: " + indiceDe;
-            }
-        }
-
-        private string UltimoIndiceDe()
-        {
-            var textoBusca = parametros.FirstOrDefault();
-
-            //indiceDe = ???; //implementar busca
-
-            if (indiceDe == -1)
-            {
-                return "String não encontrada: '" + textoBusca + "'";
-            }
-            else
-            {
-                return "Último índice da string '" + textoBusca + "' é: " + indiceDe;
             }
         }
 
