@@ -7,13 +7,13 @@ namespace _02._4.pesquisa
 {
     internal class Pesquisa
     {
-        private readonly Label txtPesquisa;
+        private readonly Label lblDocumento;
         private readonly List<string> parametros;
         private int indiceDe;
 
-        public Pesquisa(Label txtPesquisa, List<string> parametros)
+        public Pesquisa(Label lblDocumento, List<string> parametros)
         {
-            this.txtPesquisa = txtPesquisa;
+            this.lblDocumento = lblDocumento;
             this.parametros = parametros;
         }
 
@@ -47,7 +47,7 @@ namespace _02._4.pesquisa
 
         private string Contem()
         {
-            //txtPesquisa: caixa de texto do Windows Forms
+            //lblDocumento: caixa de texto do Windows Forms
             var textoBusca = parametros.FirstOrDefault();
 
             bool contem = false; //implementar busca
@@ -131,8 +131,8 @@ namespace _02._4.pesquisa
             int.TryParse(parametros[0], out int indiceInicial);
             int.TryParse(parametros[1], out int comprimento);
 
-            //txtPesquisa.SelectionStart = ???
-            //txtPesquisa.SelectionLength = ???
+            //lblDocumento.SelectionStart = ???
+            //lblDocumento.SelectionLength = ???
 
             string trecho = ""; //implementar busca
 
@@ -144,7 +144,7 @@ namespace _02._4.pesquisa
             var antigoTexto = parametros[0];
             var novoTexto = parametros[1];
 
-            //txtPesquisa.Text = ??? implementar substituição
+            //lblDocumento.Text = ??? implementar substituição
 
             return "Trecho substituído com sucesso.";
         }
