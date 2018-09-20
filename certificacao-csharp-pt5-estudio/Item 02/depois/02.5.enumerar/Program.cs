@@ -11,6 +11,26 @@ namespace _02._5.enumerar
             //Imprimir o documento no console, destacando
             //as letras maiúsculas no texto
 
+            string documento = GetDocumento();
+            Console.WriteLine(documento);
+
+            //Char c = documento[0];
+            //Console.WriteLine(c);
+
+            foreach (char c in documento)
+            {
+                if (char.IsUpper(c))
+                {
+                    Console.BackgroundColor = ConsoleColor.Yellow;
+                    Console.ForegroundColor = ConsoleColor.DarkBlue;
+                }
+                else
+                {
+                    Console.ResetColor();
+                }
+                Console.Write(c);
+            }
+
             Console.ReadKey();
         }
 
