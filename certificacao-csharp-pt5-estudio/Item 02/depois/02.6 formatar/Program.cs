@@ -8,6 +8,8 @@ namespace _02._6_formatar
         {
             var deLorean = new DeLorean();
             Console.WriteLine(deLorean);
+
+            Console.ReadKey();
         }
     }
 
@@ -17,10 +19,10 @@ namespace _02._6_formatar
 
         public override string ToString()
         {
-            return string.Format(
+            return 
                 "DeLorean DMC-12\r\n"
                 + "===============\r\n"
-                + "\r\n{0}", Capacitor);
+                + "\r\n" + Capacitor;
         }
     }
 
@@ -31,13 +33,12 @@ namespace _02._6_formatar
 
         public override string ToString()
         {
-            return string.Format(
+            return 
                 "Capacitor de fluxo\r\n"
                 + "=================\r\n"
                 + "Velocidade mínima:\r\n"
-                + "\tEm milhas por hora:      {0,10:N2} MPH\r\n"
-                + "\tEm quilômetros por hora: {1,10:N2} KMH"
-                , VELOCIDADE_MPH, VELOCIDADE_MPH * KMH_PARA_MPH);
+                + "\tEm milhas por hora:      " + VELOCIDADE_MPH + " MPH\r\n"
+                + "\tEm quilômetros por hora: " + VELOCIDADE_MPH * KMH_PARA_MPH + " KMH";
         }
     }
 }
