@@ -21,32 +21,40 @@ namespace _02._6_formatar
                 FimJornada = new DateTime(2018, 1, 10, 18, 0, 0)
             };
 
-            string documento =
+            string documento = string.Format(
                 @"CONTRATO INDIVIDUAL DE TRABALHO TEMPORÁRIO
-            EMPREGADOR: " + contrato.Empresa + @"
-            EMPREGADO: " + contrato.Funcionario + @"
+            EMPREGADOR: {0} 
+            EMPREGADO: {1}
 Pelo presente instrumento particular de contrato individual de trabalho,
 fica justo e contratado o seguinte:
- Cláusula 1ª - O EMPREGADO prestará ao EMPREGADOR, a partir de " 
-+ contrato.Inicio + @" e assinatura deste instrumento, seus trabalhos 
-exercendo a função de " + contrato.Cargo + @", prestando pessoalmente o 
-labor diário no período compreendido entre " + contrato.InicioJornada +
-@" e " + contrato.FimJornada + @", e intervalo de 1 hora para almoço;
+ Cláusula 1ª - O EMPREGADO prestará ao EMPREGADOR, a partir de 
+{2} e assinatura deste instrumento, seus trabalhos 
+exercendo a função de {3}, prestando pessoalmente o 
+labor diário no período compreendido entre {4} e {5}, 
+e intervalo de 1 hora para almoço;
             Cláusula 2ª - Não haverá expediente nos dias de sábado, sendo 
 prestado a compensação de horário semanal;
             Cláusula 3ª - O EMPREGADOR pagará mensalmente, ao EMPREGADO, a 
-título de salário a importância de " + contrato.Salario + @", com os 
+título de salário a importância de {6}, com os 
 descontos previstos por lei;
 
-São Paulo, " + DateTime.Today + @"
+São Paulo, {7}
 _______________________________________________________
-" + contrato.Empresa + @"
+{0}
 ______________________________________________________
-" + contrato.Funcionario + @"
+{1}
 _______________________________________________________
 (Nome, R.G, Testemunha)
 _______________________________________________________
-(Nome, R.G, Testemunha)";
+(Nome, R.G, Testemunha)"
+, contrato.Empresa
+, contrato.Funcionario
+, contrato.Inicio
+, contrato.Cargo
+, contrato.InicioJornada
+, contrato.FimJornada
+, contrato.Salario
+, DateTime.Today);
 
             Console.WriteLine(documento);
             Console.ReadKey();
