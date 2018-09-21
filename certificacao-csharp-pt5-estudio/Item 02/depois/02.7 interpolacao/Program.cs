@@ -22,40 +22,32 @@ namespace _02._7_interpolacao
             };
 
             string documento = 
-                string.Format(
-@"CONTRATO INDIVIDUAL DE TRABALHO TEMPORÁRIO
-            EMPREGADOR: {0} 
-            EMPREGADO: {1}
+
+$@"CONTRATO INDIVIDUAL DE TRABALHO TEMPORÁRIO
+            EMPREGADOR: {contrato.Empresa} 
+            EMPREGADO: {contrato.Funcionario}
 Pelo presente instrumento particular de contrato individual de trabalho,
 fica justo e contratado o seguinte:
  Cláusula 1ª - O EMPREGADO prestará ao EMPREGADOR, a partir de 
-{2:d} e assinatura deste instrumento, seus trabalhos 
-exercendo a função de {3}, prestando pessoalmente o 
-labor diário no período compreendido entre {4:t} e {5:t}, 
+{contrato.Inicio:d} e assinatura deste instrumento, seus trabalhos 
+exercendo a função de {contrato.Cargo}, prestando pessoalmente o 
+labor diário no período compreendido entre {contrato.InicioJornada:t} e {contrato.FimJornada:t}, 
 e intervalo de 1 hora para almoço;
             Cláusula 2ª - Não haverá expediente nos dias de sábado, sendo 
 prestado a compensação de horário semanal;
             Cláusula 3ª - O EMPREGADOR pagará mensalmente, ao EMPREGADO, a 
-título de salário a importância de {6:C}, com os 
+título de salário a importância de {contrato.Salario:C}, com os 
 descontos previstos por lei;
 
-São Paulo, {7:D}
+São Paulo, {DateTime.Now:D}
 _______________________________________________________
-{0}
+{contrato.Empresa}
 ______________________________________________________
-{1}
+{contrato.Funcionario}
 _______________________________________________________
 (Nome, R.G, Testemunha)
 _______________________________________________________
-(Nome, R.G, Testemunha)"
-                , contrato.Empresa
-                , contrato.Funcionario
-                , contrato.Inicio
-                , contrato.Cargo
-                , contrato.InicioJornada
-                , contrato.FimJornada
-                , contrato.Salario
-                , DateTime.Today);
+(Nome, R.G, Testemunha)";
 
             Console.WriteLine(documento);
             Console.ReadKey();
