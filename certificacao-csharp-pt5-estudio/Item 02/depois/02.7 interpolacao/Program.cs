@@ -12,39 +12,8 @@ namespace _02._7_interpolacao
         {
             var contrato = new
             {
-                Empresa = new
-                {
-                    RazaoSocial = "Alura Serviços Hidráulicos Ltda.",
-                    CNPJ = "23.432.323/0001-50",
-                    Endereco = new
-                    {
-                        CEP = "04101-300",
-                        Logradouro = "Rua Vergueiro",
-                        Complemento = "de 2771 a 5049 - lado ímpar",
-                        Bairro = "Vila Mariana",
-                        Localidade = "São Paulo",
-                        UF = "SP"
-                    },
-                    Numero = "123 fundos"
-                },
-                Funcionario = new
-                {
-                    Nome = "Mario Mario",
-                    CPF = "145.385.512-28",
-                    RG = "123.456.789-00",
-                    Nacionalidade = "italiana",
-                    EstadoCivil = "casado",
-                    Endereco = new
-                    {
-                        CEP = "07091-000",
-                        Logradouro = "Rua Nossa Senhora Mãe dos Homens",
-                        Complemento = "de 600/601 ao fim",
-                        Bairro = "Vila Progresso",
-                        Localidade = "Guarulhos",
-                        UF = "SP"
-                    },
-                    Numero = "234"
-                },
+                Empresa = "Alura Serviços Hidráulicos Ltda.",
+                Funcionario = "Mario Mario",
                 Inicio = new DateTime(2019, 1, 1),
                 Cargo = "encanador",
                 Salario = 3108.45,
@@ -52,12 +21,13 @@ namespace _02._7_interpolacao
                 FimJornada = new DateTime(2018, 1, 10, 18, 0, 0)
             };
 
-            string documento = $@"                                             CONTRATO INDIVIDUAL DE TRABALHO TEMPORÁRIO
+            string documento =
+                $@"                                             CONTRATO INDIVIDUAL DE TRABALHO TEMPORÁRIO
 
 
-            EMPREGADOR: {contrato.Empresa.RazaoSocial}, com sede à {contrato.Empresa.Endereco.Logradouro}, {contrato.Empresa.Numero}, {contrato.Empresa.Endereco.Bairro}, CEP {contrato.Empresa.Endereco.CEP}, {contrato.Empresa.Endereco.Localidade}, {contrato.Empresa.Endereco.UF}, inscrita no CNPJ sob nº {contrato.Empresa.CNPJ};
+            EMPREGADOR: {contrato.Empresa};
 
-            EMPREGADO: {contrato.Funcionario.Nome}, {contrato.Funcionario.Nacionalidade}, {contrato.Funcionario.EstadoCivil}, portador da cédula de identidade R.G.nº {contrato.Funcionario.RG} e CPF/ MF nº {contrato.Funcionario.CPF}, residente e domiciliado na {contrato.Funcionario.Endereco.Logradouro}, {contrato.Funcionario.Numero}, {contrato.Funcionario.Endereco.Bairro}, CEP {contrato.Funcionario.Endereco.CEP}, {contrato.Funcionario.Endereco.Localidade}, {contrato.Funcionario.Endereco.UF}.
+            EMPREGADO: {contrato.Funcionario}.
 
 
 Pelo presente instrumento particular de contrato individual de trabalho, fica justo e contratado o seguinte:
@@ -78,15 +48,15 @@ Cláusula 1ª - O EMPREGADO prestará ao EMPREGADOR, a partir de {contrato.Inici
 Como prova do acordado, assinam instrumento, afirmado e respeitando seu teor por inteiro, e firmam conjuntamente a este duas testemunhas, comprovando as razões descritas.
 
 
-{contrato.Empresa.Endereco.Localidade}, {DateTime.Today:D}
+São Paulo, {DateTime.Today:D}
  
  
 _______________________________________________________
-{contrato.Empresa.RazaoSocial}
+{contrato.Empresa}
 
 
 _______________________________________________________
-{contrato.Funcionario.Nome}
+{contrato.Funcionario}
 
 
 _______________________________________________________
